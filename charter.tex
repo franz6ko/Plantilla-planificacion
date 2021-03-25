@@ -1,28 +1,28 @@
 \documentclass[11pt]{charter}
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Manejo Autónomo de Maquinaria Agricola Utilizando Visión e Inteligencia Artificial - Multiview CNNs} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 %\posgrado{Carrera de Especialización en Sistemas Embebidos} 
-\posgrado{Carrera de Especialización en Internet de las Cosas} 
-%\posgrado{Carrera de Especialización en Intelegencia Artificial}
+%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+\posgrado{Carrera de Especialización en Intelegencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Francisco Tinelli} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Pablo Farreras}
+\pertenenciaDirector{CEO de SUPORTRONICS SRL} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{} % si queda vacio no se deberíá incluir 
 \pertenenciaCoDirector{}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Pablo Farreras}
+\empresaCliente{SUPPORTRONICS}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -32,9 +32,9 @@
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{25 de agosto de 2020}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlanificacion{13 de octubre de 2020} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{22 de agosto de 2021}		%Fecha de defensa pública del trabajo final
+\fechaINICIO{05 de marzo de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlanificacion{30 de abril de 2021} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{?? de diciembre de 2021}		%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -84,7 +84,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de control de temperatura de un calefón, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de manejo autonomo de maquinaria agricola mediante la utilizacion de vision e inteligencia artificial, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y recursos economicos bridnados por la empresa, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -107,54 +107,56 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna}{red}
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
-
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
 \begin{itemize}
-\item ¿Cómo se vincula este proyecto con la misión de la organización?
-\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-\item ¿Cuales son las necesidades que debe satisfacer?
-\item ¿Por dónde pasa la innovación?
+\item Misión de la Empresa
 \end{itemize}
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema }y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+Supportronics SRL se enfoca en aumentar la competitividad de las empresas de sus clientes, a través de innovación tecnológica en electrónica y software.
 
-\vspace{25px}
+La experiencia técnica y focalización en dirección de proyectos de su equipo, permite obtener la mejor relación costo-calidad. Además, posee socios estratégicos localizadas en Estados Unidos, Alemania y China, posibilitando la optimización de todos los procesos de interacción y comunicación.
+
+\begin{itemize}
+\item Vinculación del proyecto
+\end{itemize}
+
+Dicho proyecto está directamente vinculado con la empresa ya que integra muchos de los conceptos antes mencionados obteniendo como resultado un producto final competente para el mercado.
+
+Este proyecto consistirá en la mejora de un producto comercial del cliente que ya se encuentra disponible en el mercado hace varios años. El mismo ya ha pasado por varias etapas de evolución originados del feedback obtenido de sus clientes. En esta etapa, se estudiará la factibilidad de agregar la funcionalidad de manejo autónomo.
+
+Actualmente el producto ofrecido por la empresa se encuentra entre las etapas de madurez y declinación del ciclo de vida del producto. Esto es así debido a que el funcionamiento de la máquina es estrictamente mecánico, sin ninguna intervención electrónica o informática, lo que la pone en desventaja frente a sus competidores.
+
+El objetivo de este proyecto es modernizar el producto del cliente para incorporar tecnología y reubicar el mismo en un nuevo ciclo de vida del producto mejorado.
+
+\begin{itemize}
+\item Origen del proyecto - Necesidad
+\end{itemize}
+
+Debido a la naturaleza demandante del trabajo humano en el sector agrícola, cada vez es menor la cantidad de gente que quiere dedicarse al mismo. Las intensas tareas implicadas conllevan condiciones físicas desgastantes que limitan el trabajo a la gente más apta (generalmente hombres jóvenes o de mediana edad) y conllevan a un deterioro humano prematuro. Por ello, cada vez existe una mayor necesidad de tecnificar y realizar el trabajo
+de forma automática y eficiente. 
+
+Es objetivo del presente proyecto incorporar tecnología para mejorar esas condiciones de trabajo y extender la posibilidad de trabajo a personas que de otra manera no podrían, ya sea por razones de edad, discapacidad o falta de condiciones físicas entre otras.
+
+Para ello, Supportronics se propone desarrollar e implementar un sistema de manejo autónomo en agricultura extensiva para implementar en maquinaria agrícola autopropulsada permitiendo el desplazamiento de la misma entre las hileras del cultivo sin la necesidad de la intervención humana.
+
+Actualmente existen diversas tecnologías de manejo autónomo para lo que se denomina agricultura intensiva como son la soja, maíz, girasol,etc. Por otra parte existe otra rama de la agricultura que vendría siendo la extensiva como puede ser lechuga, durazno, viñas, etc. En este tipo de agricultura no se encuentran maquinaria comercial apta para realizar un manejo autónomo, siendo este sector muy vulnerable ante las exigencias del personal de trabajo. 
+
+En la Figura \ref{fig:diagBloques} se presenta el diagrama de bloques del sistema. Se observa en naranja la etapa de creación y entrenamiento de la red neuronal donde la cámara de visión artificial genera un dataset de imágenes en el cual deben ser claramente visualizados los distintos entornos del mismo, las distintas plantaciones y su disposición en el espacio. El bloque de entrenamiento es alimentado de este dataset y del diseño de red neuronal propuesto, luego se procede con el entrenamiento de la misma hasta obtener un resultado final. Si el error relativo no es aceptable se procede a generar un nuevo diseño de red y modificar los datos datos generados, en caso de ser un error aceptable se procede a conformar la red. En el bloque azul ya se procede a su test e implementación en campo, donde nuevamente el entorno es adquirido mediante la cámara de visión para ser enviada al procesador de inteligencia artificial que ya posee una red neuronal entrenada y validada. El resultado obtenido es aportado al sistema de navegación para la toma de decisiones del control de dirección y el control de avance.
+
+\vspace{60px}
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.7\textwidth]{./Figuras/diagBloques.png}
+\includegraphics[width=.99\textwidth]{./Figuras/Diagrama1.png}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
 
-\vspace{25px}
-
-El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama.
-\end{consigna}
-
+\vspace{60px}
 
 \section{Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-\begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
+\begin{consigna}{black} 
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -163,32 +165,25 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
-Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
+%Auspiciante  &                   &					&        	\\ \hline
+Cliente       & \clientename      &\empclientename	& CEO       	\\ \hline
+%Impulsor     &                   &              	&        	\\ \hline
+Responsable   & \authorname       & Supportronics  	& Alumno 	\\ \hline
+%Colaboradores & -                 &    				&       	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director	Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Equipo        & Francisco Tinelli
+	   \newline Federico Sesto 
+  	   \newline Santiago Rivier          & SUPPORTRONICS & Desarrolladores 	\\ \hline
+%Opositores    &                   &              	&        	\\ \hline
+%Usuario final &                   &              	&        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Sería deseable listar a continuación de la tabla las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-\item Orientador: María Gómez, nos va a poder ayudar mucho con la gestión de impuestos.
+\item Cliente: Pablo Farreras, es quien nos porporciona el proyecto.
+\item Responsable: Francisco Tinelli, es el que va a dasarrollar el proyecto junto con su equipo de trabajo.
+\item Orientador: Pablo Farreras, es el jefe del proyecto y lider del equipo.
+\item Equipo: Federico Sesto y Santiago Rivier, son el equipo con quien se va a trabajar para llevar a cabo el proyecto.
 \end{itemize}
 
 \end{consigna}
@@ -198,77 +193,68 @@ Por ejemplo:
 \section{1. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
+Desarrollar e incorporar un sistema de manejo autónomo para maquinaria agrícola mediante la utilización de una cámara de profundidad e inteligencia artificial, para mejorar la competitividad del producto del cliente y lograr una mayor inclusividad de personal de campo mejorando sustancialmente sus condiciones de trabajo.
 
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
 
 \section{2. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+Debido a la gran magnitud del proyecto propuesto por la empresa, el presente proyecto final destinado a la especialización comprenderá solo una primera etapa del gran proyecto, donde es de mayor importancia la aplicación de inteligencia artificial.
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+El proyecto comprenderá los siguientes puntos y etapas:
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
+\begin{itemize}
+\item Investigación sobre las tecnologías a utilizar (Cámara y Neural Stick).
+\item Formación de know-how sobre las mismas a través del estudio y aplicación en pequeños ejemplos de prueba / demos.
+\item Formación en las áreas de inteligencia artificial que se aplicarán en el proyecto.
+\item Investigación y aprendizaje sobre las diferentes estrategias de manejo autónomo existentes y utilizadas en la actualidad.
+\item Extraccion y etiquetado de datos para la conformacion de un dataset.
+\item Selección y diseño de la arquitectura del sistema de manejo autónomo aplicada al caso particular del cliente del proyecto.
+\item Desarrollo del sistema de detección y procesamiento del entorno para orientar la maquinaria en el recorrido entre las hileras de cultivo.
+\end{itemize}
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
+Puntos no comprendidos en el proyecto:
 
-\end{consigna}
-
+\begin{itemize}
+\item Desarrollo del sistema de navegación.
+\item Desarrollo de los sistemas de control de los actuadores de la maquinaria.
+\item Aplicación en el campo de la solución elaborada.
+\end{itemize}
 
 \section{3. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que primero es necesario realizar un know-how de las tecnologías necesarias a implementar en el producto.
 
-\begin{itemize}
-\item Supuesto 1
-\item Supuesto 2...
-\end{itemize}
+Ademas se supone que es necesario generar una base de conocimientos en Inteligencia Artificial, enfocado en el area de Visión artificial y Manejo Autónomo.
 
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
+Otra suposición importante a tener en cuenta es la disponibilidad de tiempo ya que dicho proyecto cuenta con una fecha de entrega establecida.
+
+Se supone que se cuenta con el hardware necesario para llevar a cabo todo el desarrollo.
+
 
 \section{4. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible agruparlos por afinidad:
-
 \begin{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Grupo de requerimientos asociados con la vision artificial
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2
-	\item Requerimiento 3 (prioridad menor)
+	\item Analizar capacidades de la camara
+	\item Implementar codigos de ejemplo
+	\item Generar dataset de imágenes
+	\item Desarrollar método de visión artificial
+	\item Implementar método desarrollado.
+	\item Validar método de visión artificial
 	\end{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Grupo de requerimientos asociados con Neural Stick
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2 (prioridad menor)
+	\item Analizar capacidades
+	\item Implementar programas de ejemplo
+	\item Analizar posibilidad de integrar en display
+	\item Analizar viabilidad para el uso continuo.
 	\end{enumerate}
 \end{enumerate}
 
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-De ser posible indicar cómo se obtuvieron cada uno de los requerimientos 
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-\item Ser breve y conciso (nadie lee cosas largas). 
-\item Ser específico: no dejar lugar a confusiones.
-\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
@@ -280,53 +266,43 @@ Descripción: En esta sección se deben incluir las historias de usuarios y su p
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
-Cosas como: 
-\begin{itemize}
-\item Manual de uso
-\item Diagrama esquemático
-\item Código fuente
-\item Diagrama de instalación
-\item Informe final
+Cómo resultado del presente proyecto, se entregará a los docentes correspondientes de la Facultad de Ingeniería de la UBA, el informe final del proyecto con firma previa de los documentos de confidencialidad.
 
-\end{itemize}
-
-\end{consigna}
+En cuanto al cliente, también se le entregará el informe final junto con el código fuente además de diferentes programas y documentos adicionales que reflejarán el progreso del proyecto a medida que el mismo avance.
 
 \section{6. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-Se recomienda mostrar el WBS mediante una lista indexada:
-
 \begin{enumerate}
-\item Grupo de tareas 1
+\item Vision computacional
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Búsqueda de información y documentación (40 hs)
+	\item Integración con placa y display (40 hs)
+	\item Reconocimiento de objetos con código ejemplo (40 hs)
+	\item Extraccion de caracteristicas para generar dataset. (40 hs)
+	\item Desarrollo de algoritmo de visión artificial (40 hs)
+	\item Pruebas de funcionamiento en placa y display (40 hs)
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Unidad de procesamiento Neural
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Búsqueda de información y documentación (40 hs)
+	\item Implementación de códigos ejemplos (40 hs)
+	\item Integración con placa y display (40 hs)
+	\item Reconocimiento de objetos implementado en la palca y display (40 hs).
 	\end{enumerate}
-	\item Grupo de tareas 3
+\item Generación de red neuronal
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
+	\item Investigar tipos de redes neuronales (40 hs)
+	\item Analizar ventajas y desventajas para la tarea a ralizar (40 hs)
+	\item Desarrollar computacionalmente la red neuronal seleccionada (40 hs)
+	\item Analizar la capacidad de implementar dicha red neuronal en placa y display (40 hs)
+	\item Entrenamiento de la red neuronal (40 hs)
+	\item Realizar integración de red neuronal con display, cámara y unidad de procesamiento Neural (40 hs)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas hs)
+Cantidad total de horas: (640 hs)
 
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
-
-\end{consigna}
 
 \section{7. Diagrama de Activity On Node}
 \label{sec:AoN}
